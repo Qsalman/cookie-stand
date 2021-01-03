@@ -93,11 +93,11 @@ function totalCookiesPerHour() { // Bottom Totals
   cookieshopTable.appendChild(trElement);
 }
 //Calls function to generate arrays with random number of cookies
-new CookieShop('First and Pike', 23, 65, 6.3);
-new CookieShop('SeaTac', 3, 24, 1.2);
-new CookieShop('Seattle Center', 11, 38, 3.7);
-new CookieShop('Capitol Hill', 20, 38, 2.3);
-new CookieShop('Alki', 2, 16, 4.6);
+new CookieShop('Seattle', 23, 65, 6.3);
+new CookieShop('Tokyo', 3, 24, 1.2);
+new CookieShop('Dubai', 11, 38, 3.7);
+new CookieShop('Paris', 20, 38, 2.3);
+new CookieShop('lima', 2, 16, 4.6);
 
 function renderallcookieshops() {
   for(var i in allcookieshops) {
