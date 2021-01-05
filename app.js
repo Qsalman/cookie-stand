@@ -116,16 +116,7 @@ function formData(event){
   createFooter();
 
 }
-function locationcheck(location){
 
-  for(var i= 0; i<locationArray.length;i++) {
-    if(locationArray[i][0] === location){
-      alert('Location already exist. Please enter different location name');
-      throw new Error('Location already exist. Please enter different location name');
-    }
-  }
-
-}
 
 // calling the  Header Row 
 createHeader();
@@ -170,7 +161,7 @@ render(data);
 locationArray.push(ParisCookieDetails);
 
 //Create Lima	stats
-var Lima = new CookiesLocation(20,38,2.3);
+var Lima = new CookiesLocation(2,16,4.6);
 var Lima = Lima.output();
 Lima[0]='Lima';
 data = [];
