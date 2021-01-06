@@ -170,4 +170,52 @@ render(data);
 locationArray.push(Lima);
 
 
+
+// test to creat a new city 
+
+function AddCity () {
+
+    this.CityName = CityName;
+    this.minCustomersPerHour = minCustomersPerHour;
+    this.maxNumberCookies = maxCustomersPerHour;
+    this.avgNumberCookies = avgCookieSalesPerCustomer;
+}
+var newCityEntry = document.getElementById('newCityEntry');
+
+newCityEntry.addEventListener('submit', function (event){
+event.preventDefault(); 
+var newcity = new CookiesLocation(1,2,4.3);
+var newcity = newcity.output();
+newcity[0]='newcity';
+data = [];
+createRow(newcity);
+render(data);
+locationArray.push(newcity)
+var CityName = event.target.CityName.value;
+    var minCustomersPerHour = event.target.minCustomersPerHour.value;
+    var maxCustomersPerHour =  event.target.maxCustomersPerHour.value;
+    var avgCookieSalesPerCustomer = event.target.avgCookieSalesPerCustomer.value;
+    
+    var newcity = new AddCity(CityName,minCustomersPerHour,maxCustomersPerHour,avgCookieSalesPerCustomer)
+    console.log(newcity);
+    newcity.renderaddcity();
+  });
+
+// var newcity = new CookiesLocation(1,2,4.3);
+// var newcity = newcity.output();
+// newcity[0]='newcity';
+// data = [];
+// createRow(newcity);
+// render(data);
+// locationArray.push(newcity);
+
+
+
+ 
+
+
 createFooter();
+
+
+
+
